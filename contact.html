@@ -10,7 +10,7 @@
 
 <body class="bg-muted">
     <div class="bg-primary fixed">
-        <div id="main-banner" class="d-flex">
+        <div id="main-banner" class="d-flex container">
             <img src="assets/images.jpg">
             <nav id="main-navigation">
                 <div class="grid-2col text-light bg-primary">
@@ -23,17 +23,17 @@
                     <ul>Contact</ul>
                 </div>
             </nav>
-            <div>
-                <input type="text" placeholder="Search..">
+            <div class="center">
+                <input class="p-2"type="text" placeholder="Search..">
             </div>
         </div>
     </div>
 
-    <main class="container ">
+    <main class="container content-container">
 
         <section class="section bg-light shadow-dark p-3 m-3">
             <h1 class="header">Contact Information</h1>
-            <div class="grid-2col gap-3">
+            <div id="table" class="grid-2col gap-3">
                 <table class="bg-primary">
                     <tr class="text-light">
                         <th class="p-1">Resources & Reception:</th>
@@ -238,7 +238,20 @@
                     </tr>
                 </table>
             </div>
-            <div class="grid-2col gap-3">
+            <div class="grid-2col gap-2">
+                <table class="bg-primary">
+                    <tr class="text-light">
+                        <th class="p-1">Institute for ICT:</th>
+                    </tr>
+                    <tr class="bg-light">
+                        <td class="p-1">Telephone:</td>
+                        <td class="p-1">+356 2398 7350</td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td class="p-1">Email:</td>
+                        <td class="p-1">+123 4567 8901</td>
+                    </tr>
+                </table>
                 <table class="bg-primary">
                     <tr class="text-light">
                         <th class="p-1">Institute of BMC</th>
@@ -252,20 +265,8 @@
                         <td class="p-1">+123 4567 8901</td>
                     </tr>
                 </table>
-                <table class="bg-primary">
-                    <tr class="text-light">
-                        <th class="p-1">Institute of Applied Science:</th>
-                    </tr>
-                    <tr class="bg-light">
-                        <td class="p-1">Telephone:</td>
-                        <td class="p-1">+356 2398 7350</td>
-                    </tr>
-                    <tr class="bg-light">
-                        <td class="p-1">Email:</td>
-                        <td class="p-1">+123 4567 8901</td>
-                    </tr>
-                </table>
             </div>
+
         </section>
         <section id="contact" class="section bg-light shadow-dark p-3 m-3">
             <h1 class="header">Contact Us</h1>
@@ -276,14 +277,14 @@
                         <label for="input-topic">Topic:</label>
                         <select name="topic" id="input-topic" class="bg-muted">
                             <option value="" disabled selected>Choose a topic</option required>
-                            <option value="I love coffee">Topic 1</option>
-                            <option value="I love coffee">Topic 2</option>
-                            <option value="I love coffee">Topic 3</option>
-                            <option value="I love coffee">Topic 4</option>
-                            <option value="I love coffee">Topic 5</option>
-                            <option value="I love coffee">Topic 6</option>
-                            <option value="I love coffee">Topic 7</option>
-                            <option value="I love coffee">Topic 8</option>
+                            <option value="Topic 1">Topic 1</option>
+                            <option value="Topic 2">Topic 2</option>
+                            <option value="Topic 3">Topic 3</option>
+                            <option value="Topic 4">Topic 4</option>
+                            <option value="Topic 5">Topic 5</option>
+                            <option value="Topic 6">Topic 6</option>
+                            <option value="Topic 7">Topic 7</option>
+                            <option value="Topic 8">Topic 8</option>
 
                         </select>
                     </div>
@@ -297,7 +298,7 @@
                     </div>
                     <div>
                         <label for="input-message">Your message:</label>
-                        <textarea name="message" id="input-message" placeholder="your message here..." cols="30"
+                        <textarea name="message" id="input-message" placeholder="your message here..." cols="70"
                             rows="10" required minlength="20"></textarea>
                     </div>
 

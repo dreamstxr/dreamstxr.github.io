@@ -79,7 +79,10 @@ main {
 
 .container {
     max-width: 1500px;
-    margin: 10% auto auto auto;
+    margin: auto;
+}
+.content-container {
+    margin-top: 10rem;
 }
 
 /************************* BUTTONS PERIADDDDDDDDDDDD********************/
@@ -119,16 +122,10 @@ main {
 
 .link {
     color: var(--primary);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.link:hover {
-    color: var(--primary-tint);
-}
 
-.link:active {
-    color: var(--primary-shade);
-}
 
 .news-image:hover {
     color: var(--primary-tint);
@@ -183,24 +180,25 @@ main {
 /************************* COMPONENTS PERIADDDDDDDDDDDD********************/
 
 .news-image {
-    position: relative;
+    position: relative;    
+    width: 100%;
+    aspect-ratio: 4/1;
+    object-fit: cover;
     /*This will tell the news-tag to behave.*/
 }
-
-.news-image img {
+.news-image:hover {
+    position: relative;    
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/1;
     object-fit: cover;
-    border: 4px solid var(--light);
-    border-radius: var(--space-1);
-    box-shadow: var(--shadow-dark);
+    background-color: var(--muted-tint);
+    /*This will tell the news-tag to behave.*/
 }
 
 .news-image .news-tag {
     background-color: var(--dark);
     color: var(--light);
     box-shadow: var(--shadow-light);
-
     padding: var(--space-1);
     border-radius: var(--space-3);
     position: absolute;
@@ -230,7 +228,7 @@ main {
 }
 
 #main-banner {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
@@ -358,6 +356,7 @@ nav ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /************************* TABLE PERIADDDDDDDDDDDD********************/
@@ -385,6 +384,7 @@ td {
 
 .section {
     border-radius: var(--space-1);
+    padding: var(--space-2) var(--space-8) var(--space-2) var(--space-8);
 }
 
 .section h1 {
@@ -408,7 +408,7 @@ td {
     display: block;
     width: 100%;
     font-family: var(--font-normal);
-    font-size: 1em;
+    font-size: 2em;
     padding: var(--space-1)
 }
 
@@ -418,4 +418,14 @@ td {
 
 .contact-form div {
     margin: var(--space-1) 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    aspect-ratio: 1/1;
 }
