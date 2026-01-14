@@ -4,7 +4,7 @@
 /* Variables for this website */
 :root {
     --primary: #000043;
-    --secondary: #f5b13c;
+    --secondary: #e69c1d;
     --primary-tint: #171755;
     --primary-shade: #04041f;
     --secondary-tint: #ffc45f;
@@ -206,6 +206,7 @@ main {
 
 .news-image {
     position: relative;
+        width: 100%;
     /*This will tell the news-tag to behave.*/
 }
 
@@ -219,7 +220,6 @@ main {
     background-color: var(--dark);
     color: var(--light);
     box-shadow: var(--shadow-light);
-
     padding: var(--space-1);
     border-radius: var(--space-3);
     position: absolute;
@@ -230,6 +230,10 @@ main {
 .overflow {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.curved {
+    border-radius: var(--space-1);
 }
 
 /************************* LAYOUTT PERIADDDDDDDDDDDD********************/
@@ -253,95 +257,41 @@ main {
     /* Repeat 1fr Twice */
 }
 
+.grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Repeat 1fr Twice */
+}
+
 #main-banner {
     justify-content: space-between;
 }
 
 /************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
 
-.m-0 {
-    margin: var(--space-0);
-}
+.m-0 {    margin: var(--space-0);}
+.m-1 {    margin: var(--space-1);}
+.m-2 {    margin: var(--space-2);}
+.m-3 {    margin: var(--space-3);}
+.m-4 {    margin: var(--space-4);}
+.m-5 {    margin: var(--space-5);}
+.m-6 {    margin: var(--space-6);}
+.m-7 {    margin: var(--space-7);}
+.m-8 {    margin: var(--space-8);}
 
-.m-1 {
-    margin: var(--space-1);
-}
+.p-0 {    padding: var(--space-0);}
+.p-1 {    padding: var(--space-1);}
+.p-2 {    padding: var(--space-2);}
+.p-3 {    padding: var(--space-3);}
+.p-4 {    padding: var(--space-4);}
+.p-5 {    padding: var(--space-5);}
+.p-6 {    padding: var(--space-6);}
+.p-7 {    padding: var(--space-7);}
 
-.m-2 {
-    margin: var(--space-2);
-}
-
-.m-3 {
-    margin: var(--space-3);
-}
-
-.m-4 {
-    margin: var(--space-4);
-}
-
-.m-5 {
-    margin: var(--space-5);
-}
-
-.m-6 {
-    margin: var(--space-6);
-}
-
-.m-7 {
-    margin: var(--space-7);
-}
-
-.m-8 {
-    margin: var(--space-8);
-}
-
-.p-0 {
-    padding: var(--space-0);
-}
-
-.p-1 {
-    padding: var(--space-1);
-}
-
-.p-2 {
-    padding: var(--space-2);
-}
-
-.p-3 {
-    padding: var(--space-3);
-}
-
-.p-4 {
-    padding: var(--space-4);
-}
-
-.p-5 {
-    padding: var(--space-5);
-}
-
-.p-6 {
-    padding: var(--space-6);
-}
-
-.p-7 {
-    padding: var(--space-7);
-}
-
-.gap-0 {
-    gap: var(--space-0);
-}
-
-.gap-1 {
-    gap: var(--space-1);
-}
-
-.gap-2 {
-    gap: var(--space-2);
-}
-
-.gap-3 {
-    gap: var(--space-3);
-}
+.gap-0 {    gap: var(--space-0);}
+.gap-1 {    gap: var(--space-1);}
+.gap-2 {    gap: var(--space-2);}
+.gap-3 {    gap: var(--space-3);}
 
 /************************* SWATCHESS PERIADDDDDDDDDDDD********************/
 
@@ -430,8 +380,7 @@ label, a, figcaption {
 
 .contact-form input,
 .contact-form textarea,
-.contact-form select,
-input, textarea, select {
+.contact-form select, textarea, select {
     appearance: none;
     border-color: var(--dark);
     border-radius: 4px;
@@ -457,6 +406,7 @@ input, textarea, select {
     align-items: center;
     display: flex;
     justify-content: center;
+    
 }
 
 .block {
