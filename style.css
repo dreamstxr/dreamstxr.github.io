@@ -87,7 +87,7 @@ main {
     margin-top: 10rem;
 }
 
-/************************* BUTTONS PERIADDDDDDDDDDDD********************/
+/* Buttons */
 
 .btn {
     border: none;
@@ -132,7 +132,7 @@ main {
     color: var(--primary-tint);
 }
 
-/************************* COLORS PERIADDDDDDDDDDDD********************/
+/* Coloring */
 
 .bg-primary {
     background-color: var(--primary);
@@ -199,7 +199,7 @@ main {
     box-shadow: var(--shadow-light)
 }
 
-/************************* COMPONENTS PERIADDDDDDDDDDDD********************/
+/* Components for Index + Navigation Banner Images*/
 
 .banner-image {
     position: relative;    
@@ -248,19 +248,13 @@ main {
     border-radius: var(--space-1);
 }
 
-/************************* LAYOUTT PERIADDDDDDDDDDDD********************/
+/* Layout */
 .d-flex {
     display: flex;
 }
 
 .flex-between {
     justify-content: space-between;
-}
-
-.grid-1col {
-    display: grid;
-    grid-template-columns: repeat(1);
-    /* Repeat 1fr Twice */
 }
 
 .grid-2col {
@@ -272,20 +266,20 @@ main {
 .grid-3col {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Repeat 1fr Twice */
+    /* Repeat 1fr Three Times */
 }
 
 .grid-4col {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Repeat 1fr Twice */
+    /* Repeat 1fr Four Times */
 }
 
 #main-banner {
     justify-content: space-between;
 }
 
-/************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
+/* Spacing */
 
 .m-0 {    margin: var(--space-0);}
 .m-1 {    margin: var(--space-1);}
@@ -311,33 +305,7 @@ main {
 .gap-2 {    gap: var(--space-2);}
 .gap-3 {    gap: var(--space-3);}
 
-/************************* SWATCHESS PERIADDDDDDDDDDDD********************/
-
-.swatches {
-    display: flex;
-    /* organises children elements in a line */
-}
-
-.swatch {
-    padding: var(--space-1);
-    border: var(--dark) 2px solid;
-}
-
-.swatch .swatch-value {
-    /* em - root font size (16px) */
-    aspect-ratio: 1 / 1;
-    border-radius: 100%;
-    box-shadow: var(--shadow-dark);
-    margin: auto;
-    width: 4rem;
-}
-
-.swatch .swatch-name {
-    text-align: center;
-}
-
-
-/************************* NAV PERIADDDDDDDDDDDD********************/
+/* Navigation */
 
 nav ul {
     font-size: 2.2rem;
@@ -360,7 +328,7 @@ ul a{
     z-index: 1000;
 }
 
-/************************* TABLE PERIADDDDDDDDDDDD********************/
+/* Table */
 
 table {
     border-collapse: collapse;
